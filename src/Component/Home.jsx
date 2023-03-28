@@ -1,67 +1,23 @@
 import './../App.css'; 
 import React,{Component} from 'react';
 import Card from './Card';
-import Menu from './../Vector.png';
-import Netflix from './../netflix-logo.png';
-import Loupe from './../loupe.png';
-import Chevron from './../chevron.png';
-import Profile from './../Profile.png';
-import Background from './../background.png';
-import Star from './../Star.png';
-import Play from './../Play.png';
-import Trend from './../Trend.png';
-import Fire from './../fire.png';
-import Plus from './../plus.png';
-import Chev from './../Chev.png';
-import  Baby from './../Baby-Driver.png';
-import Film from './../Film-1899.png';
-import Squid from './../Squid-Game.png';
-import Titans from './../TITANS.png';
-import Wednesday from './../Wednesday.png';
-import Witcher from './../Witcher.png';
+import Menu from './../images/Vector.png';
+import Netflix from './../images/netflix-logo.png';
+import Loupe from './../images/loupe.png';
+import Chevron from './../images/chevron.png';
+import Profile from './../images/Profile.png';
+import Background from './../images/background.png';
+import Star from './../images/Star.png';
+import Play from './../images/Play.png';
+import Trend from './../images/Trend.png';
+import Fire from './../images/fire.png';
+import Plus from './../images/plus.png';
+import Chev from './../images/Chev.png';
+
 
 class Home extends  Component {
     
-    state={
-        carte: [
-            {
-                id : 1,
-                img : <img src={Baby} alt='baby' className='image'/>,
-                title: "Baby Driver", 
-                coords : "2017 | 1h 53m",
-            },
-            {
-                id : 2,
-                img : <img src={Squid} alt='squid' className='image'/>,
-                title: "Squid Game", 
-                coords : "2017 | 1 season",
-            },
-            {
-                id : 3,
-                img : <img src={Titans} alt='titans' className='image'/>,
-                title: "Titans",
-                coords : "2018 | 4 seasons",
-            },
-            {
-                id : 4,
-                img : <img src={Wednesday} alt="Wednesday" className='image'/>, 
-                title: "Wednesday" ,
-                coords : "2022 | 1 season",
-            },
-            {
-                id : 5,
-                img : <img src={Witcher} alt="Witcher" className='image'/>, 
-                title: "The Witcher",
-                coords : "2019 | 2 seasons", 
-            },
-            {
-                id : 6,
-                img : <img src={Film} alt="1899" className='image'/>, 
-                title: "1899", 
-                coords : "2022 | 1 season",
-            }
-        ]
-    }
+    
 
     render () {
         return (
@@ -103,7 +59,8 @@ class Home extends  Component {
 
             </div>
 
-            <div className='second-root' style={{ backgroundImage: `url(${Background}`, backgroundSize: '100% 100%',}}>
+            <div className='second-root' >  
+            {/* style={{ backgroundImage: `url(${Background}`, backgroundSize: '100% 100%',}} */}
 
                 <div className='racine'>
 
@@ -197,7 +154,7 @@ class Home extends  Component {
             </div>
             <div className='card'>
            
-            {this.state.carte.map((carte)=>{
+            {this.props.carte.map((carte)=>{
               return (<Card key={carte.id} carte={carte}/>)
             })
         }
