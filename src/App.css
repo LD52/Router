@@ -1,38 +1,336 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.root {
   display: flex;
   flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+.first-root {
+  height: 10%;
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+}
+
+.top-first {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  margin-right: 2rem;
+  padding-top: 0.5rem;
+  padding-right: 2rem;
+}
+
+.first-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  margin-right: 1.5rem;
+}
+
+.first-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.top-second {
+  display: flex;
+  margin-left: 2rem;
+  margin-right: 1rem;
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+
+.top-second div {
+  width: 25%;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.top-second div h3 {
+  color: #E0E3E8;
+}
+
+.top-third {
+  margin-left: 2rem;
+  display: flex;
+  width: 20%;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-third div {
+  padding-bottom: 1rem;
+}
+
+.search {
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.text h4 {
+  margin-right: 0.3rem;
+  margin-left: 1rem;
+}
+
+.top-last {
+  margin-left: 2rem;
+  display: flex;
+  width: 20%;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.chevron {
+  margin-left: 4rem;
+  margin-right: 0.5rem;
+}
+
+.second-root {
+  height: 600px;
+  display: flex;
+  margin-bottom: 3rem;
+  width: 100%;
+  
+}
+
+.racine {
+  margin-left: 2rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  height: 75%;
+  color: white;
+  margin-top: 2rem;
+  padding-top: 3rem;
+}
+
+.un {
+  width: 50%;
+  margin-bottom: 1rem;
+}
+
+.trois {
+  border: white 2px solid;
+  border-radius: 30px;
+  width: 7%;
+  margin-top: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.quatre {
+  display: flex;
+  align-items: center;
+}
+
+.star {
+  padding-top: 0.2rem;
+  margin-right: 0.2rem;
+}
+
+.star-next {
+  margin-left: 1rem;
+}
+
+.cinq {
+  margin-top: 2rem;
+}
+
+.six {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.sept {
+  width: 80%;
+  display: flex;
+}
+
+.sept-first {
+  width: 40%;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+
+}
+
+.sept-first-first {
+  margin-right: 1rem;
+}
+
+.sept-second {
+  width: 30%;
+  display: flex;
+  margin-left: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.third-root {
+  height: 50px;
+  width: 95%;
+  margin-left: 2rem;
+  border-bottom: 2px solid rgb(180, 176, 176);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.third-first {
+  display: flex;
+  width: 15%;
+  align-items: center;
+}
+
+.trend {
+  margin-right: 0.5rem;
+}
+
+.trends {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.img {
+  height: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.third-second {
+  display: flex;
+  width: 15%;
+  align-items: center;
+}
+
+.note {
+  margin-right: 0.5rem;
+}
+
+.Pop {
+  color: white;
+  padding-bottom: 0.3rem;
+}
+
+.third-third {
+  display: flex;
+  align-items: center;
+  width: 15%;
+  justify-content: end;
+}
+
+.add {
+  margin-right: 0.5rem;
+}
+
+.new {
+  color: white;
+  padding-bottom: 0.3rem;
+}
+
+.fourth-root {
+  margin-left: 2rem;
+}
+
+.fourth-top h4 {
+  color: white;
+}
+
+.fourth-top {
+  display: flex;
+}
+
+.top-deux {
+  display: flex;
+  margin-left: 0.5rem;
+}
+
+.top-deux div {
+  margin-right: 0.3rem;
+}
+
+.top-trois div {
+  margin-right: 0.3rem;
+}
+
+.top-trois {
+  display: flex;
+  width: auto;
+  margin-left: 1rem;
+}
+.card {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  width: 97%;
+  display: flex;
+  height: 300px;
+  margin-right: 1.5rem;
+  margin-bottom: 100px;
+}
+
+.under-card {
+  height: 100%;
+  width: 20%;
+  margin-right: 1rem;
+}
+
+.under-card h5,
+h3 {
+  color: white;
+}
+
+.card-top {
+  height: 80%;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+}
+
+.card-bottom-first {
+  margin-top: 0.5rem;
+  height: 10%;
+}
+
+.card-bottom-second {
+  height: 10%;
+}
+.détail-base{
+  height: 100%;
+  border: green solid 2px;
+  width: 95%;
+  margin-left: 2rem;
+  background-color: aqua;
+}
+.détail-button{
+  border-radius: 10px;
+  border: gray solid 2px;
+  color: black;
+  display: flex;
+  height: 30px;
+  width: 10%;
 }
