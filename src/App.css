@@ -280,6 +280,7 @@
   width: auto;
   margin-left: 1rem;
 }
+
 .card {
   margin-top: 2rem;
   display: flex;
@@ -314,18 +315,104 @@ h3 {
 .card-bottom-second {
   height: 10%;
 }
-.détail-base{
-  height: 100%;
-  border: green solid 2px;
-  width: 95%;
-  margin-left: 2rem;
-  background-color: aqua;
-}
-.détail-button{
-  border-radius: 10px;
-  border: gray solid 2px;
-  color: black;
+
+.detail-base {
+  height: 600px;
   display: flex;
-  height: 30px;
+  flex-direction: column;
+  width: 100%;
+  background-color: rgba(9, 6, 23, 1);
+  padding: 0 6rem;
+}
+
+.detail-button {
+  display: flex;
+  justify-content: center;
+  height: 20px;
   width: 10%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: transparent;
+}
+
+.netflix {
+  height: 100%;
+  width: 20px;
+}
+
+.detail-card {
+  display: flex;
+  width: 80%;
+  margin-left: 6rem;
+  height: 700px;
+  flex-direction: column;
+}
+
+.detail-card-top {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.video {
+  height: 100%;
+  width: 100%;
+}
+
+.detail-card-left {
+  margin-left: 2rem;
+  width: 60%;
+  height: 90%;
+}
+
+.detail-card-right {
+  width: 40%;
+  margin-top: 2rem;
+  height: 90%;
+  padding-top: 2rem;
+}
+
+.first-detail {
+  width: 100%;
+  font-size: 150%;
+  color: white;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.second-detail {
+  margin-top: 2rem;
+  font-size: 150%;
+  margin-bottom: 0.5rem;
+}
+
+.last-detail {
+  height: 15%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.last-left {
+  width: 20%;
+  height: 80%;
+  background-color: rgb(201, 12, 12);
+  display: flex;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.last-right {
+  width: 20%;
+  height: 80%;
+  background-color: rgb(201, 12, 12);
+  display: flex;
+  border-radius: 20px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
 }
